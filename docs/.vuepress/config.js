@@ -19,9 +19,11 @@ module.exports = {
     sidebar: {
       "/blog/": [
         {
-          title: 'DevOps',
+          title: 'Linux',
           collapsable: false,
-          children: []
+          children: [
+            'linux-command'
+          ]
         }
       ]
     },
