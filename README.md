@@ -1,5 +1,7 @@
 记录个人博客、读书笔记等，欢迎star。 https://whu-luojian.github.io/
 
+---
+
 > Linux
 
 - [Linux常用命令](https://whu-luojian.github.io/blog/linux-command.html)
