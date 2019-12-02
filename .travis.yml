@@ -12,7 +12,7 @@ deploy:
   cleanup: true
   local_dir: docs/.vuepress/dist
   repo: whu-luojian/luojian.github.io
-  token: a6d94c7d7db0b6141d97fe09a77898ab2ed48583
+  token: 'a6d94c7d7db0b6141d97fe09a77898ab2ed48583'
   keep_history: true
   on:
     branch: master
