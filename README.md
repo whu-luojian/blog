@@ -1,6 +1,4 @@
-# 记录个人博客、读书笔记等，欢迎star。
-
-### https://whu-luojian.github.io/
+记录个人博客、读书笔记等，欢迎star。 https://whu-luojian.github.io/
 
 > Linux
 
