@@ -29,7 +29,7 @@ module.exports = {
           title: 'HTML',
           collapsable: false,
           children: [
-            'html-你不知道的html'
+            'html-you-not-know'
           ]
         }
       ]
