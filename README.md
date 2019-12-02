@@ -2,11 +2,11 @@
 
 > Linux
 
-- [Linux常用命令]: https://whu-luojian.github.io/blog/linux-command.html
+- [Linux常用命令](https://whu-luojian.github.io/blog/linux-command.html)
 
 > HTML
 
-- [你不知道的HTML]: https://whu-luojian.github.io/blog/html-you-not-know.html
+- [你不知道的HTML](https://whu-luojian.github.io/blog/html-you-not-know.html)
 
-  
+
 
