@@ -8,11 +8,11 @@ script:
   - npm run build
 deploy:
   provider: pages
-  target_branch: master
-  cleanup: true
-  local_dir: docs/.vuepress/dist
+  target-branch: master
+  skip-cleanup: true
+  local-dir: docs/.vuepress/dist
   repo: whu-luojian/luojian.github.io
   token: $GITHUB_TOKEN
-  keep_history: true
+  keep-history: true
   on:
     branch: master
