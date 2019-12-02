@@ -1,7 +1,7 @@
 module.exports = {
   title: "烟罗的前端博客",
   themeConfig: {
-    repo: "lmjben/blog",
+    repo: "whu-luojian/blog",
     nav: [
       {
         text: "博客",
