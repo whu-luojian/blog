@@ -2,9 +2,6 @@ sudo: required
 language: node_js
 node_js:
   - '10'
-env:
-  global:
-    secure: dd22f36f8b8c76c3a7f3827173e6a48da65cbfb6
 before_install:
   - npm install
 script:
@@ -15,7 +12,7 @@ deploy:
   skip-cleanup: true
   local-dir: docs/.vuepress/dist
   repo: whu-luojian/luojian.github.io
-  github-token: $REPO_TOKEN
+  github-token: $GITHUB_TOKEN
   keep-history: true
   on:
     branch: master
