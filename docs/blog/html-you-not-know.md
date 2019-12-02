@@ -96,4 +96,4 @@ B域页面（http://localhost:3001/b.html ）
 
 测试结果：
 
-![image-20191129170756410](https://raw.githubusercontent.com/whu-luojian/blog/master/images/image-iframe-localStorage.png)
+![测试结果](image-iframe-localStorage.png)

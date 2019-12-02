@@ -1,5 +1,11 @@
 module.exports = {
-  title: "烟罗的前端博客",
+  title: "烟罗的前端笔记",
+  markdown: {
+    lineNumbers: true
+  },
+  head: [
+    ['link', { rel: 'icon', href: '/me.png' }]
+  ],
   themeConfig: {
     repo: "whu-luojian/blog",
     nav: [
@@ -8,12 +14,12 @@ module.exports = {
         link: "/blog/"
       },
       {
-        text: "面试题",
-        link: "/interview/"
-      },
-      {
         text: "阅读",
         link: "/book/"
+      },
+      {
+        text: "面试",
+        link: "/interview/"
       }
     ],
     sidebar: {
