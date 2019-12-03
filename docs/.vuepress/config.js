@@ -37,6 +37,13 @@ module.exports = {
           children: [
             'html-you-not-know'
           ]
+        },
+        {
+          title: 'CSS',
+          collapsable: false,
+          children: [
+            'css-cup-and-wing'
+          ]
         }
       ]
     },
