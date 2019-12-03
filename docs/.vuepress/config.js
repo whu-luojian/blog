@@ -24,6 +24,10 @@ module.exports = {
       {
         text: "知乎",
         link: "https://www.zhihu.com/people/lj201314-40/posts"
+      },
+      {
+        text: "X UI",
+        link: "https://whu-luojian.github.io/x-ui/#/introduce"
       }
     ],
     sidebar: {
