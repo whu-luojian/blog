@@ -20,6 +20,10 @@ module.exports = {
       {
         text: "面试",
         link: "/interview/"
+      },
+      {
+        text: "知乎",
+        link: "https://www.zhihu.com/people/lj201314-40/posts"
       }
     ],
     sidebar: {
@@ -29,6 +33,13 @@ module.exports = {
           collapsable: false,
           children: [
             'linux-command'
+          ]
+        },
+        {
+          title: 'Git',
+          collapsable: false,
+          children: [
+            'git-version-control'
           ]
         },
         {
@@ -43,6 +54,13 @@ module.exports = {
           collapsable: false,
           children: [
             'css-cup-and-wing'
+          ]
+        },
+        {
+          title: '其它',
+          collapsable: false,
+          children: [
+            'other-navigation'
           ]
         }
       ]
