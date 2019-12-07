@@ -1,6 +1,6 @@
 # Rxjs 入门
 
-本系列文章为学习Rxjs过程中的摘抄和总结，主要学习书籍为《深入浅出Rxjs》，学习版本为Rxjs v6，学习过程中及本系列文章中的代码示例及注释见：https://github.com/whu-luojian/hello-rxjs。
+本系列文章为学习Rxjs过程中的摘抄和总结，主要学习书籍为《深入浅出Rxjs》，学习版本为Rxjs v6，学习过程中及本系列文章中的代码示例及注释见：<https://github.com/whu-luojian/hello-rxjs>。
 
 ## Reactive Extension
 
