@@ -64,6 +64,15 @@ module.exports = {
             'other-navigation'
           ]
         }
+      ],
+      "/book/": [
+        {
+          title: '深入浅出Rxjs',
+          collapsable: false,
+          children: [
+            'rxjs-abc'
+          ]
+        },
       ]
     },
     lastUpdated: "更新时间",
