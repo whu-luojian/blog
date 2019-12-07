@@ -6,7 +6,7 @@ tagline: 记录点滴，浓缩精华
 actionText: 开始阅读 →
 actionLink: /blog/
 features:
-  - title: 笔记
+  - title: 博客
     details: 平时学习、培训或者项目的总结。
   - title: 阅读
     details: 系统阅读某本书籍的个人感悟和读书笔记。
