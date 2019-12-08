@@ -39,7 +39,8 @@ module.exports = {
           title: 'Git',
           collapsable: false,
           children: [
-            'git-version-control'
+            'git-version-control',
+            'git-account-config'
           ]
         },
         {
