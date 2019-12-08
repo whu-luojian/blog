@@ -70,7 +70,8 @@ module.exports = {
           title: '深入浅出Rxjs',
           collapsable: false,
           children: [
-            'rxjs-abc'
+            'rxjs-abc',
+            'rxjs-operator-abc'
           ]
         },
       ]
