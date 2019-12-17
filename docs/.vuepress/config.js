@@ -59,6 +59,13 @@ module.exports = {
           ]
         },
         {
+          title: 'JavaScript',
+          collapsable: false,
+          children: [
+            'js-execution'
+          ]
+        },
+        {
           title: '其它',
           collapsable: false,
           children: [
