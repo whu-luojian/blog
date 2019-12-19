@@ -36,7 +36,7 @@ console.log(obj.c)	// 3
 
 vscode 调试面板查看绑定函数 fbound 和 obj：
 
-![image-20191219153323611](C:\Users\luojian\AppData\Roaming\Typora\typora-user-images\image-20191219153323611.png)
+![bind](bind.png)
 
 由上可知，绑定函数有如下特点：
 
@@ -103,4 +103,3 @@ if (!Function.prototype.bind) {
 ```
 
 具体代码见<[https://github.com/whu-luojian/interview-questions/blob/master/%E6%89%8B%E5%86%99%E4%BB%A3%E7%A0%81/bind.js](https://github.com/whu-luojian/interview-questions/blob/master/手写代码/bind.js)>
-
