@@ -62,7 +62,8 @@ module.exports = {
           title: 'JavaScript',
           collapsable: false,
           children: [
-            'js-execution'
+            'js-execution',
+            'js-object-oriented'
           ]
         },
         {

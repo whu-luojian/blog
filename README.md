@@ -25,6 +25,7 @@
 > JavaScript
 
 - [JavaScript执行原理](https://whu-luojian.github.io/blog/js-execution.html)
+- [JavaScript面向对象：原型和继承](https://whu-luojian.github.io/blog/js-object-oriented.html)
 
 > 其它
 
