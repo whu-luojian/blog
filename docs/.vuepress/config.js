@@ -70,7 +70,8 @@ module.exports = {
           title: '其它',
           collapsable: false,
           children: [
-            'other-navigation'
+            'other-navigation',
+            'wonderful-article'
           ]
         }
       ],
