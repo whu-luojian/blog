@@ -67,6 +67,13 @@ module.exports = {
           ]
         },
         {
+          title: '浏览器',
+          collapsable: false,
+          children: [
+            'browser-frontend-cache'
+          ]
+        },
+        {
           title: '其它',
           collapsable: false,
           children: [
