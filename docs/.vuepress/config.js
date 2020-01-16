@@ -1,5 +1,5 @@
 module.exports = {
-  title: "烟罗的前端笔记",
+  title: "前端杂货铺",
   markdown: {
     lineNumbers: true
   },
@@ -104,7 +104,8 @@ module.exports = {
           title: '手写代码',
           collapsable: false,
           children: [
-            'handwriting-bind'
+            'handwriting-bind',
+            'handwriting-cloneDeep'
           ]
         },
       ]

@@ -1,7 +1,7 @@
 ---
 home: true
 heroImage: /me.png
-heroText: 烟罗的前端笔记
+heroText: 前端杂货铺
 tagline: 记录点滴，浓缩精华
 actionText: 开始阅读 →
 actionLink: /blog/
