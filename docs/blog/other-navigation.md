@@ -8,3 +8,5 @@
 
 - [深入理解TypeScript](https://jkchao.github.io/typescript-book-chinese/#why)
 
+- [Vue Loader 使用及原理](https://vue-loader.vuejs.org/zh/)
+

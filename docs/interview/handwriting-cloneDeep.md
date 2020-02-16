@@ -59,6 +59,27 @@ let func = function() {
 let newFunc = colne(func)  //直接报错
 ```
 
+## 简单版
+
+```js
+/**
+ * 简单版，不支持环，不支持Function、Date、Symbol等，速度较快
+ * @param {*} obj obj
+ */
+const simpleCloneDeep = obj => {
+  let result
+  if (typeof obj === "object") {
+    result = obj.constructor === Array ? [] : {}
+    for (let i in obj) {
+      result[i] = typeof obj[i] === "object" ? simpleCloneDeep(obj[i]) : obj[i]
+    }
+  } else {
+    result = obj
+  }
+  return result
+}
+```
+
 ## ES6 终极版
 
 ```js
@@ -148,3 +169,14 @@ for (let key of Reflect.ownKeys(cloneObj)) {
 // innumerable相同吗？  true
 // loop相同吗？  false
 ```
+
+## 性能测试
+
+简单对比了下 `lodash` 版 、简单版、终极版深拷贝的性能
+
+实验数据为由一万个对象组成的数组，
+
+- node 环境下平均耗时：
+  - 简单版：35ms
+  - `lodash`版：125ms
+  - 终极版：380ms
