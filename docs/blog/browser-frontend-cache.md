@@ -1,6 +1,6 @@
 # 一文读懂前端缓存
 
-> 年底项目忙，大半个月没更新博客了，偷个懒，本文摘抄自[一文读懂前端缓存](https://zhuanlan.zhihu.com/p/44789005)和 一篇文章理解Web缓存](https://segmentfault.com/a/1190000015809379)
+> 年底项目忙，大半个月没更新博客了，偷个懒，本文摘抄自[一文读懂前端缓存](https://zhuanlan.zhihu.com/p/44789005)和[一篇文章理解Web缓存](https://segmentfault.com/a/1190000015809379)
 
 ## 前端缓存/后端缓存
 
