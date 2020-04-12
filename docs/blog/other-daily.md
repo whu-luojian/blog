@@ -19,3 +19,16 @@
 ```
 
 有些像 Sass 之类的预处理器无法正确解析 `>>>`。这种情况下你可以使用 `/deep/` 或 `::v-deep` 操作符取而代之——两者都是 `>>>` 的别名，同样可以正常工作。
+
+## 【2020-03-06】列表交互点
+
+1. 列表刷新、列表搜索、更改pageSize时均需将页码置为1
+
+## 【2020-03-08】ant-design-vue 踩坑
+
+1. ant-design-vue 太坑，table 的 filter value必须为string
+
+## 【2020-03-10】禁用lodash-webpack-plugin
+
+1.  lodash-webpack-plugin 会影响ant-design-vue组件库的编译，使用中发现如果使用lodash-webpack-plugin插件会导致 Form组件校验崩溃（Form组件使用了lodash），具体原因未知
+2. 使用lodash-webpack-plugin后 loadash 深拷贝性能降低千倍（80ms -> 18s）
