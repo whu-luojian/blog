@@ -105,7 +105,8 @@ module.exports = {
           collapsable: false,
           children: [
             'handwriting-bind',
-            'handwriting-cloneDeep'
+            'handwriting-cloneDeep',
+            'handwriting-promise'
           ]
         },
       ]

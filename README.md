@@ -52,3 +52,4 @@
 
 - [bind](https://whu-luojian.github.io/interview/handwriting-bind.html)
 - [cloneDeep](https://whu-luojian.github.io/interview/handwriting-cloneDeep.html)
+- [promise](https://whu-luojian.github.io/interview/handwriting-promise.html)
