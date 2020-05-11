@@ -32,3 +32,7 @@
 
 1.  lodash-webpack-plugin 会影响ant-design-vue组件库的编译，使用中发现如果使用lodash-webpack-plugin插件会导致 Form组件校验崩溃（Form组件使用了lodash），具体原因未知
 2. 使用lodash-webpack-plugin后 loadash 深拷贝性能降低千倍（80ms -> 18s）
+
+## 【2020-04-10】vue-cli-service inspect
+
+你可以使用 `vue-cli-service inspect` 来审查一个 Vue CLI 项目的 webpack config：https://cli.vuejs.org/zh/guide/cli-service.html#vue-cli-service-inspect
