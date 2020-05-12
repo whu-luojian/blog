@@ -12,6 +12,7 @@
 
 - [软件开发中的版本控制](https://whu-luojian.github.io/blog/git-version-control.html)
 - [Git 多账户配置](https://whu-luojian.github.io/blog/git-account-config.html)
+- [Git 进阶](https://whu-luojian.github.io/blog/git-advance.html)
 
 > HTML
 
@@ -38,6 +39,8 @@
 > 其它
 
 - [网站导航](https://whu-luojian.github.io/blog/other-navigation.html)
+- [优秀文章](https://whu-luojian.github.io/blog/wonderful-article.html)
+- [日常小知识点](https://whu-luojian.github.io/blog/other-daily.html)
 
 ## 阅读
 

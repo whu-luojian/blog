@@ -40,7 +40,8 @@ module.exports = {
           collapsable: false,
           children: [
             'git-version-control',
-            'git-account-config'
+            'git-account-config',
+            'git-advance'
           ]
         },
         {
@@ -85,7 +86,8 @@ module.exports = {
           collapsable: false,
           children: [
             'other-navigation',
-            'wonderful-article'
+            'wonderful-article',
+            'other-daily'
           ]
         }
       ],
