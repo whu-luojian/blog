@@ -215,7 +215,7 @@ git push <remote> <branch> -f # 若还没有推送到远端，不用输入 -f
 推送 tag 到远程仓库：
 
 - `git push origin tag-name`
-- `git push origin refs/tag/tag-name`
+- `git push origin refs/tags/tag-name`
 
 删除远程仓库 tag
 
