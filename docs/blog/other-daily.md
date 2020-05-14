@@ -35,4 +35,4 @@
 
 ## 【2020-04-10】vue-cli-service inspect
 
-你可以使用 `vue-cli-service inspect` 来审查一个 Vue CLI 项目的 webpack config：https://cli.vuejs.org/zh/guide/cli-service.html#vue-cli-service-inspect
+你可以使用 `vue-cli-service inspect` 来审查一个 Vue CLI 项目的 webpack config：<https://cli.vuejs.org/zh/guide/cli-service.html#vue-cli-service-inspect>

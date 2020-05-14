@@ -1,6 +1,6 @@
 # Git 进阶
 
-> 一个学习 Git 的互动型网站：https://learngitbranching.js.org/?demo=&locale=zh_CN
+> 一个学习 Git 的互动型网站：<https://learngitbranching.js.org/?demo=&locale=zh_CN>
 
 ## git commit
 
@@ -9,9 +9,93 @@
 
 ## git stash
 
-- 把工作区内容缓存到一个栈里，之后用 `git stash pop`取出。在未提交工作区内容，但是想切到其他分支时非常有用。
+默认情况下， `git stash` 命令会把以下修改存储到一个新的堆栈中。堆栈中的内容（stash）可以被所有分支访问.
 
-- 不建议同一时间段在不同分支都使用 `git stash`，涉及到多个分支的情形还是先  commit 较好，不push到远程，下次 commit 时可用 `--amend` 合到上次提交中。
+- 暂存区中的修改
+- 工作区中已经存在的文件的修改
+
+也就是说，默认情况下，git stash 命令不会存储下列文件:
+
+- 工作区中新增的文件（untracked files）
+- 被版本库忽略的文件（.gitignore 中定义的）
+
+如果你还想要存储 untracked files，可以使用 -u 选项：
+
+```bash
+git stash -u
+```
+
+如果你还想要存储 untracked files 和被版本库忽略的文件，可以使用 -a 选项：
+
+```bash
+# 但是，一般不推荐这么做，因为既然是被版本库忽略的文件，就没有必要再存储起来。除非你有非常特别的需求。
+git stash -a
+```
+
+如果你想要在 git stash 时，添加一个 message 注解，可以使用 save 选项。
+
+```bash
+git stash save "备注信息"
+```
+
+执行 ``git stash`` 命令后，工作区就恢复到了上一次 git commit 时的状态。具体表现为：
+
+- 暂存区中的修改看不见了。
+- 工作区中已经存在的文件的修改也看不见了。
+- 如果使用了 -u 选项，工作区中新添加的文件对于工作区也看不见了。
+
+这样工作区就干净多了。使用 git diff 和 git diff --cached 也看不到工作区和暂存区中的修改了。因为它们都被存储到了一个堆栈中。
+
+然后，我们就可以新建分支，切换到新的分支来处理其他的需求。
+
+#### 常用命令
+
+存储到堆栈
+
+```bash
+git stash save -u "备注信息"
+```
+
+查看堆栈中 stash 列表
+
+```bash
+git stash list
+```
+
+查看 stash 内容
+
+```bash
+git stash show
+git stash show stash@{id}
+```
+
+将堆栈中的 stash 应用到工作区
+
+```bash
+# 将堆栈中的最近一次 stash，应用到工作区（删除堆栈的内容）
+git stash pop
+
+# 将堆栈中的最近一次 stash，应用到工作区（保留堆栈的内容）
+git stash apply
+# 将堆栈中的最近一次 stash，应用到工作区（保留堆栈的内容）
+git stash apply stash@{0}
+
+# 将堆栈中的指定 stash 应用到工作区（保留堆栈的内容）
+git stash apply stash@{id} 
+```
+
+删除堆栈中的stash
+
+```bash
+# 删除指定的 stash
+git stash drop stash@{id} 
+ 
+# 删除最近一次的 stash
+git stash drop
+ 
+# 删除所有的 stash
+git stash clear
+```
 
 ## git rebase
 
@@ -114,6 +198,10 @@ git push <remote> <branch> -f # 若还没有推送到远端，不用输入 -f
 1. 从master拉一个fix分支（为什么是master）
 2. 测试完后 rebase master
 3. 合并回master
+
+## Git 工作流
+
+见 <https://juejin.im/post/5ce39cb251882533147bb945#heading-17>
 
 ## 其它
 
