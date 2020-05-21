@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "main": "index.js",
   "dependencies": {
-    "vuepress": "^1.2.0"
+    "vuepress": "^1.2.0",
+    "vuepress-theme-antdesign": "^1.2.0"
   },
   "devDependencies": {
     "husky": "^3.1.0"

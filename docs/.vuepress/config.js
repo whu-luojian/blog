@@ -6,7 +6,9 @@ module.exports = {
   head: [
     ['link', { rel: 'icon', href: '/me.png' }]
   ],
+  theme: 'antdesign',
   themeConfig: {
+    logo: '/me.png',
     repo: "whu-luojian/blog",
     nav: [
       {
@@ -22,8 +24,13 @@ module.exports = {
         link: "/interview/"
       },
       {
-        text: "X UI",
-        link: "https://whu-luojian.github.io/x-ui/#/introduce"
+        text: '工具库',
+        items: [
+          { text: 'x-cli', link: 'https://github.com/whu-luojian/x-cli' },
+          { text: 'gojs-vue', link: 'https://github.com/whu-luojian/gojs-vue' },
+          { text: 'vuepress-theme-antdesign', link: 'https://github.com/whu-luojian/vuepress-theme-antdesign'},
+          { text: 'template-vue-component', link: 'https://github.com/whu-luojian/template-vue-component'}
+        ]
       }
     ],
     sidebar: {
