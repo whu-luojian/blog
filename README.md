@@ -35,6 +35,7 @@
 > Vue
 
 - [vue nextTick 引发的思考](https://whu-luojian.github.io/blog/vue-nextTick.html)
+- [vux 源码解析](https://whu-luojian.github.io/blog/vue-vuex.html)
 
 > 其它
 

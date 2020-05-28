@@ -85,7 +85,8 @@ module.exports = {
           title: 'Vue',
           collapsable: false,
           children: [
-            'vue-nextTick'
+            'vue-nextTick',
+            'vue-vuex'
           ]
         },
         {
