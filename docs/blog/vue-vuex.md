@@ -1,7 +1,7 @@
 # Vuex 源码解析
 
 > 本文转载自染陌大佬的文章[vuex 源码解析](https://juejin.im/post/59f66bd7f265da432d275d30)
-> vuex源码注释：https://github.com/answershuto/learnVue/tree/master/vuex-src
+vuex源码注释：<https://github.com/answershuto/learnVue/tree/master/vuex-src>
 
 ## Vuex
 
