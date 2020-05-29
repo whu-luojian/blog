@@ -1,7 +1,6 @@
 # Vuex 源码解析
 
 > 本文转载自染陌大佬的文章[vuex 源码解析](https://juejin.im/post/59f66bd7f265da432d275d30)
->
 > vuex源码注释：https://github.com/answershuto/learnVue/tree/master/vuex-src
 
 ## Vuex
@@ -278,7 +277,7 @@ Vue.prototype.globalData = globalData;
 <div>{{globalData.d}}</div>复制代码
 ```
 
-上述代码在全局有一个globalData，它被传入一个Vue对象的data中，之后在任意Vue模板中对该变量进行展示，因为此时globalData已经在Vue的prototype上了所以直接通过this.prototype访问，也就是在模板中的{{prototype.d}}。此时，setTimeout在1s之后将globalData.d进行修改，我们发现模板中的globalData.d发生了变化。其实上述部分就是Vuex依赖Vue核心实现数据的“响应式化”。
+上述代码在全局有一个globalData，它被传入一个Vue对象的data中，之后在任意Vue模板中对该变量进行展示，因为此时globalData已经在Vue的prototype上了所以直接通过this.prototype访问，也就是在模板中的globalData.d。此时，setTimeout在1s之后将globalData.d进行修改，我们发现模板中的globalData.d发生了变化。其实上述部分就是Vuex依赖Vue核心实现数据的“响应式化”。
 
 不熟悉Vue.js响应式原理的同学可以通过笔者另一篇文章[响应式原理](https://github.com/answershuto/learnVue/blob/master/docs/响应式原理.MarkDown)了解Vue.js是如何进行数据双向绑定的。
 
