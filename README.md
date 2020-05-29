@@ -31,6 +31,7 @@
 > 浏览器
 
 - [一文读懂前端缓存](https://whu-luojian.github.io/blog/browser-frontend-cache.html)
+- [你真的了解 FPS 吗](https://whu-luojian.github.io/blog/browser-fps.html)
 
 > Vue
 

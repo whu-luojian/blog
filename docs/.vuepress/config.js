@@ -78,7 +78,8 @@ module.exports = {
           title: '浏览器',
           collapsable: false,
           children: [
-            'browser-frontend-cache'
+            'browser-frontend-cache',
+            'browser-fps'
           ]
         },
         {
