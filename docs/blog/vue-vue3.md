@@ -41,9 +41,9 @@ vue3 预计八月份发版
 
 `demo`地址：[**demo**](https://github.com/whu-luojian/vite-vue3)
 
-`vite`：https://github.com/vitejs/vite
+`vite`：<https://github.com/vitejs/vite>
 
-`create-vite-app`：https://github.com/vitejs/create-vite-app
+`create-vite-app`：<https://github.com/vitejs/create-vite-app>
 
 - 基于浏览器原生 ES imports 的开发服务器
 - 同时不仅有 Vue 文件支持，支持热更新，而且热更新的速度不会随着模块增多而变慢
@@ -125,7 +125,7 @@ extends: [
 
 混入(`mixin`) 将不再作为推荐使用， `Composition API`可以实现更灵活且无副作用的复用代码。
 
-API 地址：https://composition-api.vuejs.org/zh/
+API 地址：<https://composition-api.vuejs.org/zh/>
 
 ### `Performance`
 
@@ -135,7 +135,7 @@ API 地址：https://composition-api.vuejs.org/zh/
 - `update`性能提高 1.3~2 倍
 - `ssr`性能提高了 2~3 倍（不依赖`virtual dom`）
 
-https://vue-next-template-explorer.netlify.app/
+<https://vue-next-template-explorer.netlify.app/>
 
 ### `Tree shaking`
 
@@ -166,7 +166,7 @@ https://vue-next-template-explorer.netlify.app/
 
 ## Composition API
 
-> 文档：https://composition-api.vuejs.org/zh/
+> 文档：<https://composition-api.vuejs.org/zh/>
 
 ### 目的
 
@@ -242,9 +242,9 @@ https://vue-next-template-explorer.netlify.app/
 
 > vite：法语，快的意思；vue 也是法语，视图的意思
 >
-> https://github.com/vitejs/create-vite-app
+> <https://github.com/vitejs/create-vite-app>
 >
-> https://juejin.im/post/5eaeb6c4f265da7bae2f9914
+> <https://juejin.im/post/5eaeb6c4f265da7bae2f9914>
 
 定位：**更轻、更快的，面向现代浏览器的开发工具**
 
