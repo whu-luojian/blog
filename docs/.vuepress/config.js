@@ -111,7 +111,7 @@ module.exports = {
           ]
         },
         {
-          title: 'Node.js深入浅出',
+          title: '深入浅出 Node.js',
           collapsable: false,
           children: [
             'node-introduction'
