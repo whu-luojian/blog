@@ -36,7 +36,8 @@
 > Vue
 
 - [vue nextTick 引发的思考](https://whu-luojian.github.io/blog/vue-nextTick.html)
-- [vux 源码解析](https://whu-luojian.github.io/blog/vue-vuex.html)
+- [vuex 源码解析](https://whu-luojian.github.io/blog/vue-vuex.html)
+- [vue3 & vite 介绍](https://whu-luojian.github.io/blog/vue-vue3.html)
 
 > 其它
 
@@ -50,6 +51,10 @@
 
 - [Rxjs 入门](https://whu-luojian.github.io/book/rxjs-abc.html)
 - [Rxjs 操作符基础及 Rxjs 6](https://whu-luojian.github.io/book/rxjs-operator-abc.html)
+
+> 深入浅出 Nodejs
+
+- [Nodejs 介绍](https://whu-luojian.github.io/book/node-introduction.html)
 
 ## 面试
 
