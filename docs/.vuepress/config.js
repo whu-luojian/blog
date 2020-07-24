@@ -87,7 +87,8 @@ module.exports = {
           collapsable: false,
           children: [
             'vue-nextTick',
-            'vue-vuex'
+            'vue-vuex',
+            'vue-vue3'
           ]
         },
         {
