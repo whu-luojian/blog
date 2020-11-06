@@ -20,3 +20,15 @@ flex: 1;
 height: 0;
 min-height: 0;
 ```
+
+经测试，等价于：
+
+```css
+/* 宽 */
+flex: 1;
+overflow-x: hidden;
+
+/* 高 */
+flex: 1;
+overflow-y: hidden;
+```
