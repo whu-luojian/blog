@@ -63,7 +63,8 @@ module.exports = {
           collapsable: false,
           children: [
             'css-cup-and-wing',
-            'css-fc'
+            'css-fc',
+            'css-compatibility'
           ]
         },
         {
