@@ -72,7 +72,9 @@ module.exports = {
           collapsable: false,
           children: [
             'js-execution',
-            'js-object-oriented'
+            'js-object-oriented',
+            'tail-recursion',
+            'functional-programming'
           ]
         },
         {
