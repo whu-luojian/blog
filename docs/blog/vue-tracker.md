@@ -7,7 +7,7 @@
 
 ## 现状
 
-现有项目针对 `PV` 和交互日志的代码埋点如下：
+现有项目针对 `PV` 和交互日志的埋点代码如下：
 
 ```vue
 // index.vue
@@ -59,7 +59,7 @@ export const trackEvent = (id, data = {}) => {
 }
 ```
 
-在需要使用的地方引入 `trackEvent` ，调用即可。如此即可将业务代码和埋点外部依赖隔离开。
+在需要使用的地方引入 `trackEvent` 调用即可,如此可将业务代码和埋点外部依赖隔离开。
 
 ### PV 埋点
 
@@ -96,11 +96,9 @@ class UserPage extends React.Component {
 
 在 `Vue` 中复用代码的主要方式是 `mixins` ，并且也很少提到高阶组件的概念，因为在 `Vue` 中实现高阶组件并不像 `React` 中那样简单。
 
-在 `React` 中，一个函数就是一个组件，那么高阶组件就是高阶函数，在 `React` 中写高阶组件就是写高阶函数，比较简单。
+在 `React` 中，一个函数就是一个组件，那么高阶组件就是高阶函数，在 `React` 中写高阶组件就是写高阶函数，比较简单。那么在 `Vue` 中，组件是什么？
 
-在 `Vue` 中，组件是什么？
-
-不使用 `vue-class-component` 的情况下，我们在单文件中组件的定义其实就是一个普通的选项对象。例如：
+在不使用 `vue-class-component` 的情况下，我们在单文件中组件的定义其实就是一个普通的选项对象。例如：
 
 ```js
 export default {
@@ -118,7 +116,7 @@ import BaseComponent from './base-component.vue'
 console.log(BaseComponent)
 ```
 
-虽然单文件组件会被 `vue-loader` 处理，但处理后的结果，即 `BaseComponent` 仍然还是一个普通的 `JSON` 对象，只有把这个对象注册为组件（`components` 选项）之后，`	Vue` 最终会以该对象为参数创建一个构造函数，该构造函数就是生产组件实例的构造函数，所以在 `Vue` 中组件确实是函数，只不过是最终结果罢了。在这之前 `Vue` 中组件就是一个普通对象，因此 `Vue` 中的高阶组件可以这样定义：**接收一个纯对象，并返回一个新的纯对象**，如下代码：
+虽然单文件组件会被 `vue-loader` 处理，但处理后的结果，即 `BaseComponent` 仍然还是一个普通的 `JSON` 对象，只有把这个对象注册为组件（`components` 选项）之后，`	Vue` 才会以该对象为参数创建一个构造函数，该构造函数就是生产组件实例的构造函数。所以在 `Vue` 中组件确实是函数，只不过是最终结果罢了，在这之前 `Vue` 中组件就是一个普通对象，因此 `Vue` 中的高阶组件可以这样定义：**接收一个纯对象，并返回一个新的纯对象**，如下代码：
 
 ```js
 const hoc = (WrappedComponent) => {
@@ -138,7 +136,7 @@ const hoc = (WrappedComponent) => {
 }
 ```
 
-以上 `hoc` 并不可用，`Vue` 高阶组件除了需要透传 `props` 、`attrs` 、`event` 之外，还需要处理 `slot` 、`scopedSlot` 等等，具体可参考文章[探索 `Vue` 高阶组件](https://juejin.cn/post/6844903545607553032)
+但是以上 `hoc` 并不可用，`Vue` 高阶组件除了需要透传 `props` 、`attrs` 、`event` 之外，还需要处理 `slot` 、`scopedSlot` 等等，具体可参考文章[探索 `Vue` 高阶组件](https://juejin.cn/post/6844903545607553032)
 
 如上，**在不使用 `vue-class-component` 的情况下，`Vue` 高阶组件的实现和使用是比较困难、收益较低的**。
 
@@ -169,7 +167,7 @@ console.log(UserPage)
 
 ![image-20210111153334299](image-20210111153334299.png)
 
-`UserPage` 打印出来是一个 `VueComponent` 的构造函数，构造函数上挂载了构造组件示例所需的选项，我们可以基于特定需求动态改造这些选项。
+`UserPage` 打印出来是一个 `VueComponent` 的构造函数，构造函数上挂载了构造组件实例所需的选项，我们可以基于特定需求动态改造这些选项。
 
 针对 `PV` 埋点，我们需要做的就是在组件的 `mounted` 生命周期中加入对应的日志上报代码即可，如下：
 
@@ -191,7 +189,7 @@ export const PV = (id, data = {}) => {
 }
 ```
 
-使用方法和 `React` 高阶组件一致，使用装饰器：
+使用方法和 `React` 高阶组件一致，使用类装饰器：
 
 ```vue
 // index.vue
@@ -217,7 +215,6 @@ export default class Page extends Vue {
 缺点：
 
 - **针对 `keep-alive` 的页面，需要增加 `activated` 生命周期的处理**
-
 - **`PV` 埋点代码耦合到各个组件中，难以定位。**
 - **从现有代码中不能宏观把握项目的页面埋点情况，容易少埋漏埋，不便维护。**
 
@@ -248,7 +245,7 @@ router.beforeResolve((to, from, next) => {
 
 
 
-有两个问题需要解决：
+但有两个问题需要解决：
 
 1. 大多数情况下，一个 `path` 对应一个页面，我们只需判断 `PVInfoMap[to.path]` 是否存在即可，存在则需要进行埋点。然对于 `Tabs` 而言，一个 `Tab` 对应一个页面，多个 `Tab` 页的 `path` 是可能相等的，不同的是 `query` 参数，例如：`/a?tab=1` 和 `/a?tab=2` ，因此页面的判断需要考虑 `query` 参数。
 
