@@ -250,7 +250,7 @@ pipe(...operations: OperatorFunction<any, any>[]): Observable<any> {
   if (operations.length == 1) {
      return operation[0];
   }
-  
+
   return operations.reduce((prev, fn) => fn(prev), this);
 }
 ```
@@ -293,7 +293,7 @@ class Functor {
     constructor(x) {
         this.__value = x
     }
-    
+
     map(f: Function): Functor {
         return Functor.of(f(this.__value))
     }
@@ -304,7 +304,7 @@ Functor.of = function(x) {
 }
 ```
 
-- 上面代码中，`Functor` 是一个函子，它的 `map` 方法接受函数 f 作为 参数，然后返回一个新的函子，里面包含的值是被 f 处理过的 （`f(this.val)`）。 
+- 上面代码中，`Functor` 是一个函子，它的 `map` 方法接受函数 f 作为 参数，然后返回一个新的函子，里面包含的值是被 f 处理过的 （`f(this.val)`）。
 - 函数式编程里面的运算，都是通过函子完成，即运算不直接针对值，而是针对这个值的容器----函子。函子本身具有对外接口（`map`方法），各种函数就是运算符，通过接口接入容器，引发容器里面的值的变形。`Container` 里的值传递给 `map` 函数之后，就可以任我们操作；操作结束后，为了防止意外再把它放回它所属的 `Container`。这样做的结果是，我们能连续地调用 `map`，运行任何我们想运行的函数。一直调用 `map`，就是组合（`compose`）。
 
 ### Maybe 函子
@@ -322,7 +322,7 @@ class Maybe extends Functor {
     isNullOrUndefined() {
         return this.__value === null || this.__value === undefined
     }
-    
+
     map(f) {
         return this.isNullOrUndefined() ? Maybe.of(null) : Maybe.of(f(this.__value))
     }
@@ -341,7 +341,7 @@ Maybe.of(null).map(x => x.toString()) // => Maybe(null)
 
 ```js
 // Left
-class Left extends Functor { 
+class Left extends Functor {
     map(f) {
         return this
     }
@@ -351,7 +351,7 @@ Left.of = function(x) {
 }
 
 // Right
-class Right extends Functor { 
+class Right extends Functor {
     map(f) {
         return new Right.of(f(this.__value))
     }
@@ -363,10 +363,10 @@ Right.of = function(x) {
 const getAge = user => user.age ? Right.of(user.age) : Left.of("ERROR!")
 
 getAge({name: 'stark', age: '21'})
-    .map(age => 'Age is ' + age) //=> Right('Age is 21') 
+    .map(age => 'Age is ' + age) //=> Right('Age is 21')
 
 getAge({name: 'stark'})
-    .map(age => 'Age is ' + age); //=> Left('ERROR!') 
+    .map(age => 'Age is ' + age); //=> Left('ERROR!')
 ```
 
 - `Left` 可以让调用链中任意一环的错误立刻返回到调用链的尾 部，这给我们错误处理带来了很大的方便，再也不用一层又一 层的 `try/catch`。
@@ -390,7 +390,7 @@ class IO {
     constructor(f: Function) {
         this.__value = f
     }
-    
+
     map(f) {
         return IO.of(compose(f, this.__value))
     }
@@ -463,14 +463,14 @@ class Monad extends Functor {
   	join() {
     	return this.__value
   	}
-    
+
   	flatMap(f) {
     	return this.map(f).join()
   	}
 }
 ```
 
-**Monad 函子的作用是，总是返回一个单层的函子。**它有一个 `flatMap` 方法，与`map`方法作用相同，唯一的区别是如果生成了一个嵌套函子， `flatMap`  会取出后者内部的值，保证返回的永远是一个单层的容器，不会出现嵌套的情况，即嵌套的函子会被铺平（`flatten`）。
+**Monad 函子的作用是，总是返回一个单层的函子**。它有一个 `flatMap` 方法，与`map`方法作用相同，唯一的区别是如果生成了一个嵌套函子， `flatMap`  会取出后者内部的值，保证返回的永远是一个单层的容器，不会出现嵌套的情况，即嵌套的函子会被铺平（`flatten`）。
 
 ## 应用
 

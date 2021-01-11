@@ -138,7 +138,7 @@ const hoc = (WrappedComponent) => {
 }
 ```
 
-以上 `hoc` 并不可用，`Vue` 高阶组件除了需要透传 `props` 、`attrs` 、`event` 之外，还需要处理 `slot` 、``scopedSlot` 等等，具体可参考文章[探索 `Vue` 高阶组件](https://juejin.cn/post/6844903545607553032)
+以上 `hoc` 并不可用，`Vue` 高阶组件除了需要透传 `props` 、`attrs` 、`event` 之外，还需要处理 `slot` 、`scopedSlot` 等等，具体可参考文章[探索 `Vue` 高阶组件](https://juejin.cn/post/6844903545607553032)
 
 如上，**在不使用 `vue-class-component` 的情况下，`Vue` 高阶组件的实现和使用是比较困难、收益较低的**。
 
