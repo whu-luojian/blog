@@ -91,7 +91,8 @@ module.exports = {
           children: [
             'vue-nextTick',
             'vue-vuex',
-            'vue-vue3'
+            'vue-vue3',
+            'vue-tracker'
           ]
         },
         {
