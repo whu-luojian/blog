@@ -99,7 +99,8 @@ module.exports = {
           title: '工程化',
           collapsable: false,
           children: [
-            'webpack'
+            'webpack',
+            'npm'
           ]
         },
         {
