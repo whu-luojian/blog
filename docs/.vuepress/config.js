@@ -101,7 +101,8 @@ module.exports = {
           children: [
             'webpack',
             'npm',
-            'yarn'
+            'yarn',
+            'engineering-other'
           ]
         },
         {
