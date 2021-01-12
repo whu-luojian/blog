@@ -65,7 +65,7 @@
 
   ```js
   const loaderUtils = require("loader-utils");
-  
+
   module.exports = function(content){
       // 获取用户配置的options
       const options = loaderUtils.getOptions(this);
@@ -95,7 +95,7 @@
 
 ## Tapable
 
-> github： <https://github.com/webpack/tapable#tapable> 
+> github： <https://github.com/webpack/tapable#tapable>
 >
 > Hook介绍：<https://juejin.im/post/6844903588112629767>
 >
@@ -158,7 +158,7 @@ class SyncHook{
   - 注册：插件将自己的方法注册到对应钩子上，也可以在 complier、compilation 对象上创建插件的自定义钩子
   - 调用：webpack 在编译过程中，会适时地触发（call）相应钩子，因此也就触发了插件注册的方法
 
-  
+
 
 ```js
 const pluginName = 'MyPlugin'
@@ -359,5 +359,5 @@ return usingSomething();
 - Webpack 5 不仅仅支持 ES module 的 tree Shaking，commonjs规范的模块开始支持了
 - node 最小支持版本 Node.js 10.13.0
 - Webpack5 插件编写方式
- * compiler.hooks、compilation.hooks 对象被 freeze，不能添加自定义钩子
- * 插件添加自定义钩子采用 WeakMap + static getHooks() 方式
+  - compiler.hooks、compilation.hooks 对象被 freeze，不能添加自定义钩子
+  - 插件添加自定义钩子采用 WeakMap + static getHooks() 方式，即将自定义钩子维护在插件内部
