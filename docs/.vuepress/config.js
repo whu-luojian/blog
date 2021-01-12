@@ -100,7 +100,8 @@ module.exports = {
           collapsable: false,
           children: [
             'webpack',
-            'npm'
+            'npm',
+            'yarn'
           ]
         },
         {
