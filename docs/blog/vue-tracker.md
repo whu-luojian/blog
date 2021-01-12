@@ -307,10 +307,10 @@ router.beforeResolve((to, from, next) => {
   if (id) {
     // 是否有路由参数
     if (query && Object.keys(query).length) {
-      if (!route) {
-        return false
-      }
       const isMatch = (route) => {
+        if (!route) {
+          return false
+        }
         return Object.keys(query).every((key) => {
           return query[key] === route.query[key]
         })
