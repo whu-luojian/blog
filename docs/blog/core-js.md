@@ -8,7 +8,7 @@
 
 1. `core-js`
 
-**`core-js` 实现的是基础垫片能力，是整个 `core-js` 的逻辑核心 **。使用方式：
+**`core-js` 实现的是基础垫片能力，是整个 `core-js` 的逻辑核心**。使用方式：
 
 ```js
 import 'core-js'
@@ -31,7 +31,7 @@ import _from from 'core-js-pure/fetaures/array/from'
 ```js
 const {
     list, // 筛选出全球使用份额大于 2.5% 的浏览器范围需要的模块
-    targets 
+    targets
 } = require('core-js-compact')({
     targets: '2.5%'
 })
