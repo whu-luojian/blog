@@ -102,6 +102,7 @@ module.exports = {
             'webpack',
             'npm',
             'yarn',
+            'core-js',
             'engineering-snippet'
           ]
         },
