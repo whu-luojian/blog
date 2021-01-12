@@ -102,7 +102,7 @@ module.exports = {
             'webpack',
             'npm',
             'yarn',
-            'engineering-other'
+            'engineering-snippet'
           ]
         },
         {
