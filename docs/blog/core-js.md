@@ -39,13 +39,13 @@ const {
 
 `core-js-compact` 可以被 `Babel` 生态使用，由 `Babel` 分析出根据环境需要按需加载的垫片
 
-4. `core-js-builder`
+4. `core-js-bundle`
 
-`core-js-builder` 可以结合 `core-js-compact` 以及 `core-js`，并利用 `webpack` 能力，根据需求打包 `core-js` 代码：
+`core-js-bundle` 可以结合 `core-js-compact` 以及 `core-js`，并利用 `webpack` 能力，根据需求打包 `core-js` 代码：
 
 ```js
 // 把符合要求的垫片打包到 my-core-js-bundle.js 文件
-require('core-js-builder')({
+require('core-js-bundle')({
     targets: '> 0.5%',
     filename: './my-core-js-bundle.js'
 }).then(code => ...)
