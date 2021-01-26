@@ -1,6 +1,6 @@
 # 函数式编程
 
-函数式编程是和面向对象编程（Object-oriented programming）和过程式编程（Procedural programming）并列的编程范式。
+函数式编程是和面向对象编程（Object-oriented programming）以及过程式编程（Procedural programming）并列的编程范式。
 
 ## 范畴论
 
