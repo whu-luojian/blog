@@ -9,7 +9,8 @@
   "devDependencies": {
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^8.3.4",
-    "husky": "^3.1.0"
+    "husky": "^3.1.0",
+    "watchpack": "1.6.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -20,6 +21,9 @@
     "hooks": {
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
+  },
+  "resolutions": {
+    "watchpack": "1.6.1"
   },
   "author": "luojian",
   "license": "ISC",
