@@ -105,7 +105,9 @@ Student.prototype = Object.create(Person.prototype, {
    // 绑定this，执行构造函数
    let result = Con.apply(obj, arguments)
    // 如果构造函数返回的不是对象，则返回创建的新对象
-   return typeof result === 'object' ? result : obj
+   const isObject = typeof result === 'object' && result !== null
+   const isFunction = typeof result === 'function'
+   return isObject || isFunction ? result : obj
  }
 ```
 
