@@ -143,7 +143,8 @@ module.exports = {
           children: [
             'handwriting-bind',
             'handwriting-cloneDeep',
-            'handwriting-promise'
+            'handwriting-promise',
+            'handwriting-stringify'
           ]
         },
       ]
