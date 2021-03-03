@@ -130,7 +130,9 @@ module.exports = {
           title: '深入浅出 Node.js',
           collapsable: false,
           children: [
-            'node-introduction'
+            'node-introduction',
+            'node-eventloop',
+            'node-v8'
           ]
         },
       ],
