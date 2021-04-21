@@ -122,17 +122,24 @@ module.exports = {
           title: '深入浅出Rxjs',
           collapsable: false,
           children: [
-            'rxjs-abc',
-            'rxjs-operator-abc'
+            'rxjs/introduction',
+            'rxjs/operator'
           ]
         },
         {
           title: '深入浅出 Node.js',
           collapsable: false,
           children: [
-            'node-introduction',
-            'node-eventloop',
-            'node-v8'
+            'node/introduction',
+            'node/eventloop',
+            'node/v8'
+          ]
+        },
+        {
+          title: 'WebGL 入门和实践',
+          collapsable: false,
+          children: [
+            'WebGL/introduction'
           ]
         },
       ],
