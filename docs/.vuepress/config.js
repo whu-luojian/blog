@@ -139,7 +139,8 @@ module.exports = {
           title: 'WebGL 入门和实践',
           collapsable: false,
           children: [
-            'WebGL/introduction'
+            'WebGL/introduction',
+            'WebGL/draw-point'
           ]
         },
       ],
