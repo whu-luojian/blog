@@ -140,7 +140,8 @@ module.exports = {
           collapsable: false,
           children: [
             'WebGL/introduction',
-            'WebGL/draw-point'
+            'WebGL/draw-point',
+            'WebGL/draw-triangle'
           ]
         },
       ],
