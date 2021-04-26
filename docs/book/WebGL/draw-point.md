@@ -142,7 +142,6 @@
 
   <!-- 片元着色器 -->
   <!-- 顶点着色器中的数据经过图元装配和光栅化之后，来到了片元着色器 -->
-  <!-- 片元着色器通知 GPU 将光栅化后的像素渲染成红色 -->
   <script type="shader-source" id="fragmentShader">
     // 设置浮点数精度为中等精度
     precision mediump float;
@@ -151,7 +150,7 @@
     void main() {
       // 将普通颜色表示转化为 WebGL 需要的表示方式
       vec4 color = u_Color / vec4(255, 255, 255, 1);
-      // 设置像素颜色为红色
+      // 设置像素颜色
       gl_FragColor = color;
     }
   </script>
