@@ -141,7 +141,8 @@ module.exports = {
           children: [
             'WebGL/introduction',
             'WebGL/draw-point',
-            'WebGL/draw-triangle'
+            'WebGL/draw-triangle',
+            'WebGL/draw-gradient-triangle'
           ]
         },
       ],
