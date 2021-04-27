@@ -148,7 +148,7 @@ WebGL 的基本图元包含点、线段、三角形，而三角形又分为三�
       let y = e.pageY
       positions.push(x, y)
       if (positions.length % 6 === 0) {
-        // 向缓冲区中复制新的顶点数据
+        // 向缓冲区中赋值顶点数据
         gl.bufferData(gl.ARRAY_BUFFER, new Float32Array(positions), gl.DYNAMIC_DRAW)
         let color = randomColor()
         // 为片元着色器中的 u_Color 传递随机颜色

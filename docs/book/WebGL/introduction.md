@@ -1,3 +1,7 @@
+# WebGL
+
+本系列文章为学习 WebGL 过程中的摘抄和总结，主要参考资料为掘金小册《WebGL 入门和实践》，学习过程中及本系列文章中的代码示例及注释见：<https://github.com/whu-luojian/webgl-abc>。
+
 ## WebGL
 
 WebGL 是一组基于 JavaScript 语言的`图形规范`，浏览器厂商按照这组规范进行实现，为 Web 开发者提供一套 3D 图形相关的 API。
