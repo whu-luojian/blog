@@ -142,7 +142,8 @@ module.exports = {
             'WebGL/introduction',
             'WebGL/draw-point',
             'WebGL/draw-triangle',
-            'WebGL/draw-gradient-triangle'
+            'WebGL/draw-gradient-triangle',
+            'WebGL/draw-rect'
           ]
         },
       ],
