@@ -143,7 +143,8 @@ module.exports = {
             'WebGL/draw-point',
             'WebGL/draw-triangle',
             'WebGL/draw-gradient-triangle',
-            'WebGL/draw-rect'
+            'WebGL/draw-rect',
+            'WebGL/draw-circle'
           ]
         },
       ],
